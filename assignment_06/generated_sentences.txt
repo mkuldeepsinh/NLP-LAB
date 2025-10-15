@@ -1,0 +1,208 @@
+==================================================
+## 1. Greedy Search (Deterministic)
+==================================================
+1: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+2: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+3: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+4: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+5: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+6: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+7: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+8: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+9: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+10: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+11: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+12: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+13: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+14: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+15: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+16: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+17: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+18: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+19: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+20: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+21: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+22: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+23: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+24: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+25: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+26: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+27: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+28: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+29: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+30: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+31: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+32: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+33: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+34: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+35: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+36: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+37: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+38: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+39: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+40: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+41: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+42: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+43: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+44: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+45: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+46: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+47: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+48: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+49: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+50: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+51: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+52: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+53: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+54: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+55: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+56: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+57: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+58: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+59: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+60: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+61: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+62: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+63: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+64: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+65: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+66: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+67: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+68: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+69: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+70: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+71: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+72: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+73: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+74: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+75: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+76: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+77: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+78: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+79: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+80: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+81: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+82: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+83: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+84: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+85: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+86: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+87: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+88: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+89: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+90: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+91: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+92: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+93: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+94: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+95: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+96: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+97: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+98: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+99: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+100: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK>
+
+
+==================================================
+## 2. Sampling Search (Stochastic, temp=1.0, top_k=50)
+==================================================
+1: કે આ મહિનાના અંત સુધીમાં અથવા તો ૨૪મી ઓક્ટોબર સુધી આને લીલીઝંડી આપવામાં આવી શકે છે. આમાંના કેટલાક લક્ષણો આવા
+2: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> આ <UNK> બાદ પણ એટલી જ પસંદ કરે છે.
+3: 
+4: છે. એક સી <UNK> પૂર્વે ક્રાઇમ બ્રાંચના પીઆઇ <UNK> <UNK> સુચનાથી હળવદ પોલીસ અને આરોગ્ય વિભાગ ની ગાઈડ લાઈન મુજબ
+5: બે દિવસ પહેલા જ તૈમૂર પપ્પા અને <UNK> દીકરી ઈનાયા સાથે જોવા મળ્યો હતો. જેના કારણે આરોપીઓને ફરાર થવામાં મદદ
+6: <UNK> <UNK> કામ શરૂ કર્યું, પરંતુ તેમનો પહેલો બિઝનેસ આ જ હતો. નિખિલ <UNK> <UNK> ખેલ બહું પસંદ છે. નિખિલ
+7: <UNK> કહ્યું છે કે, <UNK> માસિક ARPU 21 ટકા વધીને <UNK> થયો છે. વહીવટી મંજુર આપવામાં આવેલા <UNK> બે જુદા
+8: કે આખરે ક્યા કારણોસર ગૌરાંગ અને <UNK> બાળકો સાથે આત્મહત્યા કરવાનું આત્યંતિક પગલું ભર્યું છે.
+9: એક શોધ અનુસાર આંગળીઓના <UNK> <UNK> સમયે દબાણના કારણે <UNK> ખેંચાણ થવાના કારણે તે વધુ ખેંચાય છે. શરીરના હાડકાં <UNK>
+10: 
+11: કરી <UNK> <UNK> સ્વાગત કરવામાં આવ્યું <UNK> અપાયા બાદ જે તે સ્નાતક વ્યક્તિ પોતાના અભ્યાસક્રમ મુજબ યોગ અને <UNK> પ્રેક્ટિસ
+12: માટે સૌથી સામાન્ય કસરત <UNK> સ્નાયુની <UNK> તે નાના <UNK> પરંતુ <UNK> <UNK> <UNK> અને <UNK> સાથે મળીને કેતન સાથે
+13: <UNK> <UNK>
+14: માટે જ <UNK> <UNK> ચર્ચા દરમિયાન ધાનાણીએ કહ્યું કે, 144 <UNK> ફેરફાર કરી રહ્યા છો, આ પ્રક્રિયા સમાન છે.
+15: <UNK> (તા. <UNK> ભારત દેશના પશ્ચિમ ભાગમાં આવેલા ગુજરાત રાજ્યના દક્ષિણ ભાગમાં આવેલા તાપી જિલ્લાના કુલ ૭ (સાત) તાલુકાઓ પૈકીના
+16: 
+17: એક તરફ તાલિબાન <UNK> ભારત સાથે રહેવા <UNK> ઉભો કર્યો એટલે એમને કાશ્મીરના <UNK> આઝમ <UNK> શેખ અબ્દુલ્લાને સમજાવવા જવાહરલાલ
+18: અને આ <UNK> 20 મિનિટ માટે ફરીથી ફ્રિઝ <UNK> પ્રક્રિયાને 3 વખત <UNK> ક્રીમ પાવડર અને પાણી ઉમેરો <UNK> મિશ્રણ
+19: <UNK> <UNK> અને <UNK> આ રેકેટ છેલ્લા ચારેક વર્ષથી ચાલતુ હતું.
+20: 
+21: <UNK> તાલુકાના વેપારી હબ ગણાતા છાપી ખાતે આવેલ ધ છાપી નાગરિક સહકારી બેન્કના આગામી વર્ષ <UNK> ના ડિરેક્ટર તેમજ હોદેદારો
+22: <UNK> અને <UNK> <UNK> પર સહી કરવા માટે વાદળી અથવા કાળી <UNK> ઉપયોગ <UNK> કેટલીક અપંગતા સંભવિત અરજદારને જરૂરી એપ્લિકેશનને
+23: છે. ચીને સૌરાષ્ટ્ર ઉપર <UNK> નાંખી દરિયામાં ઘૂસણખોરી કરતા ભારતીય એજન્સી એલર્ટ બની ગઈ છે. <UNK> થી <UNK> સુધી, <UNK>
+24: 
+25: <UNK> એ <UNK> <UNK> સુવે તે <UNK> તો આજે તમે પણ જાણી લો કે 1 ડિસેમ્બરથી પીએનબી એટીએમ દ્વારા પૈસા
+26: છે. આનો વિસ્તાર 3 તોફાની તત્વો પણ છે.
+27: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> એક <UNK> સરસ <UNK> તમે માત્ર <UNK>
+28: 
+29: <UNK> માટે ગર્વ લેવા જેવો છે આજનો દિવસ, <UNK> <UNK> યુદ્ધમાં <UNK> હરાવી દીધું. આવું પહેલી વાર થયું જ્યારે કોઇ
+30: પણ ચોમાસામાં સૌથી મોટી સમસ્યા અર્થવ્યવસ્થા અને વધતી મોંઘવારી
+31: પણ ઉપયોગ કરી શકશે. ગામડાની વિદ્યાર્થીઓ માટે ઉપયોગી પુરવાર થશે. હોસ્ટેલ ગર્લ્સ <UNK> અને સિનિયર <UNK> <UNK> <UNK> <UNK> <UNK>
+32: <UNK> <UNK>
+33: છે. આનો વિસ્તાર 3 તોફાની તત્વો પણ છે.
+34: <UNK> <UNK> <UNK> <UNK> છે. <UNK> જન્મ, <UNK> અને <UNK> એ ભારતીય સંસ્કૃતિ છે તેને <UNK> <UNK> લો અને તમારી
+35: હતી. છેલ્લાં છ વર્ષથી તે <UNK> એટોમિક રિસર્ચ સેન્ટર <UNK> <UNK> દ્વારા મેનેજ થતું હોય. અત્રે એ નોંધનીય છે કે
+36: છે. ચીને સૌરાષ્ટ્ર ઉપર <UNK> નાંખી દરિયામાં ઘૂસણખોરી કરતા ભારતીય એજન્સી એલર્ટ બની ગઈ છે.
+37: તે સાથે અક્ષયની આ વર્ષની ફિલ્મોની કમાણી <UNK> કરોડ રૂપિયા <UNK> હોવાના <UNK> કેન્દ્રીય એજન્સીઓને પણ મોટા કૌભાંડની ગંધ આવી
+38: 
+39: <UNK> <UNK> એક <UNK> અને પુરૂષો માટે બે <UNK> જરૂર હતી, પગની નહીં પરંતુ <UNK> તીવ્રતાના <UNK> સમાવેશ થાય છે.
+40: અને <UNK> છેલ્લો મહત્વનો ભાગ મિરર હશે. બહાર જવા પહેલાં દેખાવ ચકાસવા માટે લાલચ ટાળવા માટે કેવી રીતે, છલકાઇ માં
+41: પછી ની બીજી જ તપાસ માં ડોકટર એ કીધું કે એક બાળક નો વિકાસ નથી એટલે તમે એમ જ મન
+42: જો તમે <UNK> જીવન ઉમંગ પોલીસી લો છો તો તમારે રોજના 169 રૂપિયા જમા કરવાના રહે છે. આ વખતે કર્ણાટકમાં
+43: તમે સાદા જૂના ક્રેડિટ કાર્ડ જેવી ડેબિટ કાર્ડનો ઉપયોગ કરી શકો છો: ગ્લોબલ ગરીબી, પીટર <UNK> રેન્ડમ હાઉસ, 2010 માં
+44: <UNK> <UNK> ભારત ની એક ખુબ જ અલગ રીત ની સ્વાદ થી ભરપુર કેળા ની સાથે સ્વાસ્થ્ય <UNK> મેથી નું
+45: 
+46: અને <UNK> સાથે ભેગા કરો. <UNK> આ તબક્કે, તમે કિસમિસ, <UNK> ઉમેરી શકો છો, <UNK> <UNK> ડાર્ક <UNK> સ્કીન સંબંધિત
+47: આ પણ વાંચો - ઉત્તરાયણના દિવસે રાજ્યમાં કોરોનાના નવા <UNK> કેસ નોંધાયા છે જેમાં સૌથી વધુ સી <UNK> <UNK> <UNK>
+48: આ ગામમાં મુખ્ય વસ્તી આદિવાસીઓની છે.
+49: હતી. છેલ્લાં છ વર્ષથી તે <UNK> એટોમિક રિસર્ચ સેન્ટર <UNK> <UNK> તજજ્ઞ તબીબો હાજર રહ્યા <UNK> તથા ઇન્ડિયન ક્લાસિકલ ડાન્સ
+50: અને યાદ રાખો કે માંસ સાથે અથાણું કોબી ઉપર વર્ણવ્યા અનુસાર - તે રસોઈ એક <UNK> આવૃત્તિ નથી. એ જ
+51: છે. ગાંધીનગર જિલ્લાના માણસા પાસે આ સુંદર મંદિર નિર્માણ પામ્યુ છે. કહેવાય છે કે દેશનું યૂથ જેટલું મજબૂત હશે તે
+52: પર <UNK> દખલ આપવા અને પર્યાવરણ <UNK> સંબંધમાં વિશેષ અનુરોધ કરવાનો આરોપ લગાવ્યો હતો.
+53: <UNK> <UNK> <UNK> <UNK> <UNK> <UNK> અને <UNK> <UNK> પ્રમાણમાં વધારો <UNK> જે ભારત જેવા દેશ પર અસર કરશે, વધુ
+54: છે. આનો વિસ્તાર 3 તોફાની તત્વો પણ છે.
+55: 
+56: અને બિઝનેસ કામગીરી વિશે શું? ઇન્વેન્ટરી અને ભરો <UNK> સંચાલન કરવા કોન્સ્ટન્ટ <UNK> ઉપયોગ કરે છે. કોંક્રિટ અથવા ઈંટ ઊંડે
+57: કરી હતી. જેના બાદ અમેરિકા તેની મારી નાખવાના ઓપરેશન હાથ ધર્યું હતું. જેમાં <UNK> સ્થાને પથ્થર ઉભો હોય તેમ <UNK>
+58: <UNK> <UNK> અને <UNK> <UNK> <UNK> <UNK> દ્વારા હોટેલ બુક કરીને જ્યારે પોતાની પાર્ટનર સાથે ત્યાં પહોંચ્યા તો તેમને રુમ
+59: સાથે મલ્ટી લેવલ છત પણ જરૂરી નથી કે તમે ખરાબ ગ્રાહકોને ક્યારેય મેળવી શકો છો.
+60: છે, જે ફક્ત તમે <UNK> સુયોજિત કરવા માટે મહત્વપૂર્ણ ક્ષણ બની શકે છે. શિક્ષક બાળકના <UNK> અભિગમ વગેરેને સારી રીતે
+61: 
+62: છે. એક સી <UNK> પૂર્વે ક્રાઇમ બ્રાંચના પીઆઇ <UNK> <UNK> સુચનાથી હળવદ પોલીસ અને આરોગ્ય વિભાગ ની ગાઈડ લાઈન મુજબ
+63: <UNK> <UNK> ગામે <UNK> યોજવામાં આવી તેની તસવીરો અને વિગતો પુસ્તકમાં <UNK> આવી તેની વિગતો પુસ્તકમાં <UNK> આવી તેની વિગતો
+64: માટે જ <UNK> જન્મ <UNK> અને <UNK> <UNK> આ પ્રકારના - તે બધા એક અવિશ્વસનીય પ્રથમ વ્યક્તિ શૂટર સાથે પ્રારંભ
+65: માટે તમારા <UNK> તેના પર પેટ્રોલ છાંટી તેને પણ સળગાવતાં ખળભળાટ મચી ગયો છે. જોકે આ લક્ષ્યાંકને ઈન્ડસ્ટ્રી દ્વારા થોડો
+66: <UNK> <UNK> ગામે બાઇક અકસ્માતમાં એકનું મોત, એક ગંભીર
+67: 
+68: વધુ વાંચવા કરો <UNK> વિદ્યાર્થીઓ સાથે થયેલી હિંસાને લઈને <UNK> એક ટ્વીટ કર્યું કે અગાઉ જ્યારે એક મુસ્લિમ <UNK> <UNK>
+69: <UNK> તા. ૧ : જુનાગઢ રેન્જના <UNK> શ્રી <UNK> રાવલ, ડીસાના ધારાસભ્ય શ્રી <UNK> પંડયા, પાલનપુર ભાજપ પ્રમુખ દિનેશભાઈ પટેલ,
+70: છે. આનો વિસ્તાર 3 તોફાની તત્વો પણ છે.
+71: પછી પૂછપરછમાં ખબર પડી કે મહેક જી <UNK> ધંધો ચલાવે છે અને મારા મિત્ર પણ મહેક દ્વારા બનાવેલી <UNK> પ્રશંસા
+72: માટે જ અનલોક શરૂ થયું અને બજારો ખુલ્યા ત્યારથી <UNK> રોજની એક દુકાન બંધ થઈ રહી છે. જોકે, તેમને જણાવ્યું
+73: <UNK> <UNK>
+74: 
+75: છે. આનો વિસ્તાર 3 તોફાની તત્વો પણ છે.
+76: <UNK> <UNK> એક વર્ષ <UNK> સરકારનું પણ છે. <UNK> જંગલોમાં ઉંચી ઈમારતો વચ્ચે આજે બાળકો એ આઉટડોર <UNK> દૂર થઈ
+77: <UNK> માટે <UNK> <UNK> સ્થાપના જામનગર બાદ કરાઇ હતી
+78: <UNK> <UNK> <UNK> <UNK> પર જીવે છે. તેઓ ત્યાં એકલા રહે છે અને વ્યક્તિ <UNK> પણ રહે છે. બાળકોના માતા
+79: 
+80: તે અલ્ટાઇ <UNK> <UNK> પ્રદેશમાં સ્થિત છે, સીધા <UNK> <UNK> પ્રદેશ પર સ્થિત સૌથી વધુ મુલાકાત બન્યા <UNK> <UNK> <UNK>
+81: 
+82: નથી કાંઈ આ મારાં કામ <UNK>
+83: વધુ ઉત્પાદન મેળવવા અને જમીનની <UNK> વધારવા માટે <UNK> હવે આ પ્રકારની હેલ્મેટ પર થઈ શકે છે. એવું અત્યારે થઇ
+84: છે. એક સી <UNK> પૂર્વે ક્રાઇમ બ્રાંચના પીઆઇ <UNK> <UNK> સુચનાથી હળવદ પોલીસ અને આરોગ્ય વિભાગ ટીમ મુકાઇ છે. આ
+85: માટે જ અનલોક શરૂ થયું અને બજારો ખુલ્યા ત્યારથી <UNK> રોજની એક દુકાન બંધ થઈ રહી છે. કારણ કે <UNK>
+86: હતી. છેલ્લાં છ વર્ષથી તે <UNK> એટોમિક રિસર્ચ સેન્ટર <UNK> <UNK> મેડિકલ અધિકારી તરીકે અને પિતાના ક્લિનિકમાં કામ કરે છે.
+87: અથવા બોલવા નથી
+88: 
+89: <UNK> સાથે ગુરુ <UNK> યોગ બનવાથી અશુભ પ્રભાવ પડે છે પરંતુ નિવૃત્ત <UNK> પણ લાભ કરી શકો છો! ધારો કે
+90: <UNK> <UNK> <UNK> છે. તળાવ ઓવરફ્લો થતા તેના પાણી <UNK> નદીમાં વહેવા લાગ્યા હતા. <UNK> રોડ ઉપર આવેલ રેલ્વે ફાટક
+91: <UNK> એક બાજુ <UNK> અભ્યાસ કરવામાં આવે છે, કે જે ઉત્પાદન જરૂરિયાતો માટે વાપરી શકાય છે હેઠળ છે.
+92: 
+93: લોકો પોતાનો કીમતી સમાન સાથે સલામત સ્થળે <UNK> ગયા છે. આ પ્રદૂષણને કારણે નદી, લગૂન અને તળાવ ગુલાબી રંગ થઈ
+94: અને ગુણ અને વિપક્ષ એક યાદી
+95: <UNK> અને ધુમાડાનો <UNK>
+96: હતી. છેલ્લાં છ વર્ષથી તે <UNK> એટોમિક રિસર્ચ સેન્ટર <UNK> <UNK> દ્વારા <UNK> કરાયેલા સર્ટિફિકેટ સમાન જ માન્ય ગણાશે.
+97: - લોકો ડરતા કે <UNK> સીનમાં ફરી <UNK> દુર્ઘટના ના બની જાય. <UNK> જણાવ્યું હતું કે આનાથી <UNK> જેમ પેનલ્ટી
+98: માટે સૌથી સામાન્ય કસરત <UNK> સ્નાયુની <UNK> તે નાના <UNK> પરંતુ <UNK> ઈચ્છા જુદી હતી. એટલે ઉત્તરકાશીમાં મારે વધારે વખત
+99: <UNK> સૌથી મોટો ખતરો બની ગઇ છે. ગત ઘણાં સમયથી શ્વેતા તેની પર્સનલ લાઇફને લઈને ઘણી હેડલાઇન્સમાં છે. શ્વેતાના પતિ
+100: માટે જ અનલોક શરૂ થયું અને બજારો ખુલ્યા ત્યારથી <UNK> રોજની એક દુકાન બંધ થઈ રહી છે. ભારતીય ડિઝાઇનર <UNK>
